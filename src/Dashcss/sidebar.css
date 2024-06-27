@@ -1,0 +1,70 @@
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #BDDD85; 
+  width: 200px;
+  height: 100%;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  color: #ffffff; 
+  text-decoration: none;
+  transition: background-color 0.3s; 
+  
+}
+
+.sidebar-item:hover {
+  background-color: #34495e; 
+  border-radius: 10px;
+}
+
+.sidebar-item svg {
+  margin-right: 10px;
+}
+
+.sidebar-item span {
+  flex: 1; 
+}
+
+/* Style for the toggle button */
+.toggle-btn {
+  display: none;
+  position: fixed;
+  top: 20px; 
+  left: 20px; 
+  z-index: 1001; 
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* Media query for small devices */
+@media screen and (max-width: 884px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    z-index: 1000;
+  }
+
+  .toggle-btn {
+    display: block;
+    position: fixed;
+    top: 14px;
+    right: 14px;
+  }
+
+  .sidebar.active {
+    transform: translateX(200px);
+  }
+}

@@ -1,0 +1,136 @@
+.single-medicine-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 8rem;
+}
+
+.medicine-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.medicine-images {
+  width: 30%;
+}
+
+.medicine-images img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.medicine-info {
+  width: 65%;
+  padding-left: 20px;
+}
+
+.medicine-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.medicine-description {
+  margin-bottom: 20px;
+}
+
+.medicine-description h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.medicine-description p {
+  margin-bottom: 5px;
+}
+
+.trees-used {
+  margin-bottom: 20px;
+}
+
+.trees-used h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.trees-used ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trees-used ul li {
+  margin-bottom: 10px;
+}
+
+.tree-images img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.additional-info {
+  margin-bottom: 20px;
+}
+
+.additional-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+}
+/* Media query for tablets */
+@media (max-width: 884px) {
+  .medicine-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .medicine-images {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .medicine-info {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .medicine-info h2 {
+    text-align: center;
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  .medicine_content img {
+    width: 100%;
+  }
+
+  .tree-images img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .medicine-description p {
+    font-size: 14px;
+  }
+
+  .additional-info h3 {
+    font-size: 16px;
+  }
+}

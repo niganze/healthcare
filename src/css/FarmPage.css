@@ -1,0 +1,50 @@
+/* Farm Page */
+.farm-page {
+    padding: 20px;
+  }
+  
+  /* Farm Cards Container */
+  .farms-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Farm Card */
+  .farm-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Farm Images */
+  .farm-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  /* Tree Image */
+  .farm-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Google Maps Button */
+  .farm-card button {
+    margin-bottom: 10px;
+  }
+  
+  /* Trees List */
+  .farm-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Trees List Item */
+  .farm-card li {
+    margin-bottom: 5px;
+  }
+  

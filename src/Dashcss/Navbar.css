@@ -1,0 +1,95 @@
+/* Updated CSS for Navbar */
+.AppHeader {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  
+}
+
+.logodash {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.logodash span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.title a:hover {
+  color: #1890ff;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+}
+
+.time-text{
+  color: rgb(9, 246, 72);
+  font-size: 1rem;
+}
+.large {
+  cursor: pointer;
+}
+
+/* Media query for tablet */
+@media (max-width: 768px) {
+  .AppHeader {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .logodash {
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 480px) {
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logodash span {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+}

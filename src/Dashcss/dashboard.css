@@ -1,0 +1,333 @@
+.homedashbaord{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F4F6;
+    margin-top: 4rem;
+   
+}
+
+.homedash {
+  justify-content: space-between;
+  display: flex;
+  align-items: center; 
+}
+
+.search {
+  margin-right: 20px; 
+}
+
+.search h1 {
+  margin: 0;
+  
+}
+
+button[type="button"] {
+  background-color: #BDDD85; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.save-button {
+  margin-top: 12px;
+  background-color: #BDDD85; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.save-button:hover {
+  background-color: #BDDD85;
+}
+
+
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.search h1{
+  font-size: 1.1rem;
+  color:#333333;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+.search input[type="search"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search input[type="search"]::placeholder {
+  color: #999999;
+}
+
+.SideMenuAndPageContent{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .card-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-content img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .card-content h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #333333;
+  }
+  .card-content .icons{
+    color: #0589CB;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .card-content p {
+    margin: 5px 0;
+    background-color: #F7F8FB;
+    padding: 12px;
+    border-radius: 4px;
+    color: #666666;
+    
+  }
+  .number p{
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #BDDD85; 
+  }
+ 
+.tranction{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+.appointment {
+  margin-top: 20px;
+}
+
+.appointment h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.appointment table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.appointment th, .appointment td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.appointment th {
+  background-color: #f2f2f2;
+}
+
+.appointment tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.appointment tbody tr:hover {
+  background-color: #ddd;
+}
+/* CSS for the main dashboard */
+.main_dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  
+  margin-top: 12px;
+}
+
+/* CSS for the trees container */
+.trees_container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.tree_card {
+  width: 100%;
+  max-width: 250px;
+  padding: 18px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tree_card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.tree_card:hover img {
+  transform: rotate(360deg); 
+}
+
+.tree_card p {
+  margin-top: 10px;
+}
+
+/* CSS for the recently appointment section */
+.recently_appointment {
+  width: 100%;
+}
+
+.recently_appointment h2 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.recently_appointment table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.recently_appointment th,
+.recently_appointment td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.recently_appointment th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.recently_appointment tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Modal styles */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, adjust as needed */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Media query for tablet */
+@media (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 20px); /* Adjust card width for tablet screens */
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 480px) {
+   .homedashbaord{
+    width: 100%;
+    background-color:white;
+    margin-top: 4rem;
+
+   }
+  .homedashboard{
+    width: 90vw;
+  }
+  .card {
+    flex-basis: calc(100% - 20px); /* Adjust card width for mobile screens */
+  }
+   .homedash{
+    flex-direction: column;
+   }
+  .dashboard {
+    flex-direction: column; /* Stack elements vertically for mobile screens */
+  }
+  .buttondashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0;
+  }
+  
+  .search {
+    width: 100%; 
+    margin: 0; 
+  }
+
+  .buttondashboard {
+    width: 100%; /* Make button container full width for mobile screens */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .buttondashboard button {
+    width: 100%; /* Make buttons full width for mobile screens */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+  }
+}

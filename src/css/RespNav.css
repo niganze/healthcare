@@ -1,0 +1,43 @@
+/* styles.css */
+
+.containerR {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Add rounded corners */
+    z-index: 9999;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    min-height: auto;
+  }
+  
+  .inner-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .inner-container ul {
+    list-style-type: none; 
+    display: flex; 
+    flex-direction: column;
+  }
+  
+  .inner-container li {
+    margin-right: 20px; /* Add some space between list items */
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Blue color */
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  a:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  .close{
+    color: red;
+  }

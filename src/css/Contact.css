@@ -1,0 +1,121 @@
+/* Contact.css */
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 2rem;
+  }
+  
+  .contact-form {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .contact-info {
+    flex: 1;
+  }
+  
+  .contact-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="tel"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  .contact-container .contact-form button {
+    padding: 10px 20px;
+    background-color: #80AE0D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+  
+  .contact-container .contact-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .info-icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+/* Media queries for tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-form {
+    flex-basis: 45%; /* Adjust width */
+  }
+
+  .contact-info {
+    flex-basis: 45%; /* Adjust width */
+  }
+}
+
+/* Media queries for mobile phones */
+@media (max-width: 480px) {
+
+  .contact-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+    margin-bottom: 10px; /* Add some space between sections */
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="tel"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%; /* Make inputs full width */
+    font-size: 14px; /* Decrease font size */
+  }
+
+  .contact-container .contact-form button {
+    width: 95%; /* Make button full width */
+    font-size: 14px; /* Increase font size */
+  }
+
+  .info-icon {
+    font-size: 16px; /* Decrease font size */
+  }
+}

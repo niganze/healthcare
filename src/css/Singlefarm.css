@@ -1,0 +1,40 @@
+/* SingleFarm.css */
+
+.single-farm-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 9rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.single-farm-container p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.single-farm-container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .single-farm-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .single-farm-container img {
+        max-height: 300px;
+    }
+}
